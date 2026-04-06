@@ -1,0 +1,39 @@
+name: Fetch Garmin Zone 2 Data
+
+on:
+  schedule:
+    - cron: "0 23 * * *"   # every day at 23:00 UTC (midnight Stockholm in winter)
+  workflow_dispatch:         # allows manual trigger from GitHub UI and via API
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write        # needed to push data.json back to the repo
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install garminconnect
+
+      - name: Run fetch script
+        env:
+          GARMIN_EMAIL:    ${{ secrets.GARMIN_EMAIL }}
+          GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
+        run: python garmin_fetch.py
+
+      - name: Commit and push data.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git diff --cached --quiet || git commit -m "chore: update zone 2 data [$(date -u '+%Y-%m-%d %H:%M')] [skip ci]"
+          git push
