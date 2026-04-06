@@ -279,7 +279,7 @@ const GITHUB_USER  = "iknowdrfre";
 const GITHUB_REPO  = "garmin-zone2";
 const GITHUB_TOKEN = "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";
 const WORKFLOW_ID  = "fetch.yml";
-const FILTER_STORAGE_KEY = "minActivityMinutes";
+const FILTER_STORAGE_KEY = "minZone2Minutes";
 
 async function loadData() {
   const res = await fetch(`data.json?_=${Date.now()}`);
@@ -329,14 +329,6 @@ function fmtHM(secs) {
   return `${h}h ${String(m).padStart(2,"0")}m`;
 }
 
-function parseDurationToSeconds(duration) {
-  if (!duration) return 0;
-  const parts = duration.split(":").map(Number);
-  if (parts.length !== 3 || parts.some(Number.isNaN)) return 0;
-  const [hh, mm, ss] = parts;
-  return hh * 3600 + mm * 60 + ss;
-}
-
 function getMinMinutes(data) {
   const saved = localStorage.getItem(FILTER_STORAGE_KEY);
   if (saved !== null && saved !== "" && !Number.isNaN(Number(saved))) {
@@ -360,9 +352,9 @@ function getISOWeek(dateStr) {
   return 1 + Math.round((target - firstThursday) / 604800000);
 }
 
-function filterActivitiesByMinutes(activities, minMinutes) {
+function filterActivitiesByZone2Minutes(activities, minMinutes) {
   const minSeconds = minMinutes * 60;
-  return activities.filter(a => parseDurationToSeconds(a.duration_fmt) > minSeconds);
+  return activities.filter(a => (a.zone2_seconds || 0) > minSeconds);
 }
 
 function sumZone2Seconds(activities) {
@@ -394,9 +386,9 @@ async function render() {
   const lastY = String(data.last_year);
   const minMinutes = getMinMinutes(data);
 
-  const thisActivities = filterActivitiesByMinutes(data.years[thisY].by_activity || [], minMinutes);
-  const lastActivities = filterActivitiesByMinutes(data.years[lastY].by_activity || [], minMinutes);
-  const lastYtdActivities = filterActivitiesByMinutes(data.years[lastY].by_activity_ytd || [], minMinutes);
+  const thisActivities = filterActivitiesByZone2Minutes(data.years[thisY].by_activity || [], minMinutes);
+  const lastActivities = filterActivitiesByZone2Minutes(data.years[lastY].by_activity || [], minMinutes);
+  const lastYtdActivities = filterActivitiesByZone2Minutes(data.years[lastY].by_activity_ytd || [], minMinutes);
 
   const thisTotalSeconds = sumZone2Seconds(thisActivities);
   const lastTotalSeconds = sumZone2Seconds(lastActivities);
@@ -472,7 +464,7 @@ async function render() {
 
     <div class="refresh-wrap animate delay-4" style="margin-top:1rem;">
       <label for="minMinutesInput" class="label" style="display:block; margin-bottom:0.6rem;">
-        Min aktivitetstid (minuter)
+        Min zon 2-tid (minuter)
       </label>
       <input
         id="minMinutesInput"
@@ -482,7 +474,7 @@ async function render() {
         step="1"
         value="${minMinutes}"
       />
-      <p class="refresh-note">Visar bara aktiviteter längre än detta värde.</p>
+      <p class="refresh-note">Visar bara aktiviteter med längre zon 2-tid än detta värde.</p>
     </div>
   `;
 
