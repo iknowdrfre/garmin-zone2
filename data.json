@@ -1,0 +1,1674 @@
+{
+  "updated_at": "2026-02-27",
+  "current_week": 9,
+  "current_doy": 58,
+  "this_year": 2026,
+  "last_year": 2025,
+  "min_activity_minutes": 10,
+  "years": {
+    "2026": {
+      "total_seconds": 6070,
+      "total_fmt": "1h 41m",
+      "ytd_seconds": 6070,
+      "ytd_fmt": "1h 41m",
+      "by_week": {
+        "9": 1398,
+        "8": 228,
+        "7": 915,
+        "6": 866,
+        "5": 605,
+        "4": 692,
+        "3": 648,
+        "2": 503,
+        "1": 215
+      },
+      "by_week_ytd": {
+        "9": 1398,
+        "8": 228,
+        "7": 915,
+        "6": 866,
+        "5": 605,
+        "4": 692,
+        "3": 648,
+        "2": 503,
+        "1": 215
+      },
+      "by_activity": [
+        {
+          "date": "2026-02-27",
+          "name": "Stockholm - Pulsinrervaller l\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:24:36",
+          "zone2_seconds": 1026,
+          "zone2_fmt": "0h 17m"
+        },
+        {
+          "date": "2026-02-25",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:20:08",
+          "zone2_seconds": 340,
+          "zone2_fmt": "0h 05m"
+        },
+        {
+          "date": "2026-02-23",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:20:01",
+          "zone2_seconds": 32,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2026-02-21",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:18:02",
+          "zone2_seconds": 27,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2026-02-19",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:18:06",
+          "zone2_seconds": 33,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2026-02-17",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:16:09",
+          "zone2_seconds": 168,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2026-02-15",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:15:00",
+          "zone2_seconds": 45,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2026-02-13",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:14:00",
+          "zone2_seconds": 324,
+          "zone2_fmt": "0h 05m"
+        },
+        {
+          "date": "2026-02-12",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:11:31",
+          "zone2_seconds": 542,
+          "zone2_fmt": "0h 09m"
+        },
+        {
+          "date": "2026-02-10",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:22:01",
+          "zone2_seconds": 4,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2026-02-07",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:26:37",
+          "zone2_seconds": 152,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2026-02-05",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:39:27",
+          "zone2_seconds": 147,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2026-02-03",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:43:59",
+          "zone2_seconds": 567,
+          "zone2_fmt": "0h 09m"
+        },
+        {
+          "date": "2026-01-31",
+          "name": "Stockholm - Intervall 6x2 min",
+          "type": "running",
+          "duration_fmt": "00:21:04",
+          "zone2_seconds": 211,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2026-01-29",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:42:07",
+          "zone2_seconds": 210,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2026-01-27",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "01:02:15",
+          "zone2_seconds": 184,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2026-01-22",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:42:16",
+          "zone2_seconds": 287,
+          "zone2_fmt": "0h 04m"
+        },
+        {
+          "date": "2026-01-20",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:58:22",
+          "zone2_seconds": 405,
+          "zone2_fmt": "0h 06m"
+        },
+        {
+          "date": "2026-01-16",
+          "name": "Stockholm - intervall 1 min x 8",
+          "type": "running",
+          "duration_fmt": "00:44:30",
+          "zone2_seconds": 179,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2026-01-13",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:56:56",
+          "zone2_seconds": 469,
+          "zone2_fmt": "0h 07m"
+        },
+        {
+          "date": "2026-01-11",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:25:57",
+          "zone2_seconds": 180,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2026-01-07",
+          "name": "Torremolinos - intervall 1 min x 8",
+          "type": "running",
+          "duration_fmt": "00:37:17",
+          "zone2_seconds": 48,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2026-01-05",
+          "name": "Torremolinos L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:42:20",
+          "zone2_seconds": 275,
+          "zone2_fmt": "0h 04m"
+        },
+        {
+          "date": "2026-01-02",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:41:51",
+          "zone2_seconds": 215,
+          "zone2_fmt": "0h 03m"
+        }
+      ],
+      "by_activity_ytd": [
+        {
+          "date": "2026-02-27",
+          "name": "Stockholm - Pulsinrervaller l\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:24:36",
+          "zone2_seconds": 1026,
+          "zone2_fmt": "0h 17m"
+        },
+        {
+          "date": "2026-02-25",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:20:08",
+          "zone2_seconds": 340,
+          "zone2_fmt": "0h 05m"
+        },
+        {
+          "date": "2026-02-23",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:20:01",
+          "zone2_seconds": 32,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2026-02-21",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:18:02",
+          "zone2_seconds": 27,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2026-02-19",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:18:06",
+          "zone2_seconds": 33,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2026-02-17",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:16:09",
+          "zone2_seconds": 168,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2026-02-15",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:15:00",
+          "zone2_seconds": 45,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2026-02-13",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:14:00",
+          "zone2_seconds": 324,
+          "zone2_fmt": "0h 05m"
+        },
+        {
+          "date": "2026-02-12",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:11:31",
+          "zone2_seconds": 542,
+          "zone2_fmt": "0h 09m"
+        },
+        {
+          "date": "2026-02-10",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:22:01",
+          "zone2_seconds": 4,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2026-02-07",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:26:37",
+          "zone2_seconds": 152,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2026-02-05",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:39:27",
+          "zone2_seconds": 147,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2026-02-03",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:43:59",
+          "zone2_seconds": 567,
+          "zone2_fmt": "0h 09m"
+        },
+        {
+          "date": "2026-01-31",
+          "name": "Stockholm - Intervall 6x2 min",
+          "type": "running",
+          "duration_fmt": "00:21:04",
+          "zone2_seconds": 211,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2026-01-29",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:42:07",
+          "zone2_seconds": 210,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2026-01-27",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "01:02:15",
+          "zone2_seconds": 184,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2026-01-22",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:42:16",
+          "zone2_seconds": 287,
+          "zone2_fmt": "0h 04m"
+        },
+        {
+          "date": "2026-01-20",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:58:22",
+          "zone2_seconds": 405,
+          "zone2_fmt": "0h 06m"
+        },
+        {
+          "date": "2026-01-16",
+          "name": "Stockholm - intervall 1 min x 8",
+          "type": "running",
+          "duration_fmt": "00:44:30",
+          "zone2_seconds": 179,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2026-01-13",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:56:56",
+          "zone2_seconds": 469,
+          "zone2_fmt": "0h 07m"
+        },
+        {
+          "date": "2026-01-11",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:25:57",
+          "zone2_seconds": 180,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2026-01-07",
+          "name": "Torremolinos - intervall 1 min x 8",
+          "type": "running",
+          "duration_fmt": "00:37:17",
+          "zone2_seconds": 48,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2026-01-05",
+          "name": "Torremolinos L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:42:20",
+          "zone2_seconds": 275,
+          "zone2_fmt": "0h 04m"
+        },
+        {
+          "date": "2026-01-02",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:41:51",
+          "zone2_seconds": 215,
+          "zone2_fmt": "0h 03m"
+        }
+      ]
+    },
+    "2025": {
+      "total_seconds": 66431,
+      "total_fmt": "18h 27m",
+      "ytd_seconds": 6015,
+      "ytd_fmt": "1h 40m",
+      "by_week": {
+        "1": 177,
+        "52": 803,
+        "50": 244,
+        "49": 220,
+        "48": 113,
+        "47": 213,
+        "46": 116,
+        "45": 101,
+        "44": 22,
+        "43": 29,
+        "42": 225,
+        "41": 290,
+        "40": 2485,
+        "39": 248,
+        "38": 302,
+        "37": 1500,
+        "36": 2455,
+        "35": 379,
+        "34": 3626,
+        "33": 743,
+        "32": 3305,
+        "31": 3644,
+        "30": 4589,
+        "29": 6546,
+        "28": 3710,
+        "27": 3818,
+        "26": 2302,
+        "25": 3655,
+        "24": 3723,
+        "23": 1694,
+        "22": 2220,
+        "21": 108,
+        "20": 270,
+        "18": 390,
+        "17": 426,
+        "16": 375,
+        "15": 520,
+        "14": 808,
+        "13": 655,
+        "12": 1238,
+        "11": 722,
+        "10": 1046,
+        "9": 922,
+        "8": 886,
+        "7": 1012,
+        "6": 646,
+        "5": 1305,
+        "4": 811,
+        "3": 478,
+        "2": 316
+      },
+      "by_week_ytd": {
+        "9": 561,
+        "8": 886,
+        "7": 1012,
+        "6": 646,
+        "5": 1305,
+        "4": 811,
+        "3": 478,
+        "2": 316
+      },
+      "by_activity": [
+        {
+          "date": "2025-12-30",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:39:55",
+          "zone2_seconds": 177,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2025-12-28",
+          "name": "Stockholm - intervall 1 min x 8",
+          "type": "running",
+          "duration_fmt": "00:31:18",
+          "zone2_seconds": 175,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2025-12-25",
+          "name": "Gnesta L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:44:25",
+          "zone2_seconds": 160,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2025-12-22",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:45:49",
+          "zone2_seconds": 468,
+          "zone2_fmt": "0h 07m"
+        },
+        {
+          "date": "2025-12-14",
+          "name": "Stockholm - intervall",
+          "type": "running",
+          "duration_fmt": "00:31:38",
+          "zone2_seconds": 171,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2025-12-11",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:35:25",
+          "zone2_seconds": 45,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-12-08",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:26:58",
+          "zone2_seconds": 28,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-12-03",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:34:31",
+          "zone2_seconds": 202,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2025-12-01",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:26:39",
+          "zone2_seconds": 18,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-11-27",
+          "name": "Stockholm - 5k race",
+          "type": "running",
+          "duration_fmt": "00:17:35",
+          "zone2_seconds": 113,
+          "zone2_fmt": "0h 01m"
+        },
+        {
+          "date": "2025-11-22",
+          "name": "Stockholm - 5k race",
+          "type": "running",
+          "duration_fmt": "00:29:45",
+          "zone2_seconds": 18,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-11-18",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:28:46",
+          "zone2_seconds": 195,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2025-11-13",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:26:00",
+          "zone2_seconds": 13,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-11-11",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:40:08",
+          "zone2_seconds": 103,
+          "zone2_fmt": "0h 01m"
+        },
+        {
+          "date": "2025-11-04",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:23:22",
+          "zone2_seconds": 101,
+          "zone2_fmt": "0h 01m"
+        },
+        {
+          "date": "2025-10-27",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:26:34",
+          "zone2_seconds": 22,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-10-20",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:30:08",
+          "zone2_seconds": 29,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-10-18",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:23:07",
+          "zone2_seconds": 225,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2025-10-12",
+          "name": "Dijon L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:49:00",
+          "zone2_seconds": 9,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-10-10",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:18:35",
+          "zone2_seconds": 78,
+          "zone2_fmt": "0h 01m"
+        },
+        {
+          "date": "2025-10-08",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:19:08",
+          "zone2_seconds": 157,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2025-10-06",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:19:42",
+          "zone2_seconds": 46,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-09-30",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:22:48",
+          "zone2_seconds": 51,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-09-29",
+          "name": "Inomhuscykling",
+          "type": "indoor_cycling",
+          "duration_fmt": "00:51:06",
+          "zone2_seconds": 2434,
+          "zone2_fmt": "0h 40m"
+        },
+        {
+          "date": "2025-09-25",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:35:11",
+          "zone2_seconds": 150,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2025-09-22",
+          "name": "Stockholm - 3x1k",
+          "type": "running",
+          "duration_fmt": "00:30:03",
+          "zone2_seconds": 98,
+          "zone2_fmt": "0h 01m"
+        },
+        {
+          "date": "2025-09-20",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:29:33",
+          "zone2_seconds": 23,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-09-17",
+          "name": "Stockholm - 3x1k",
+          "type": "running",
+          "duration_fmt": "00:24:57",
+          "zone2_seconds": 279,
+          "zone2_fmt": "0h 04m"
+        },
+        {
+          "date": "2025-09-13",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:21:45",
+          "zone2_seconds": 21,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-09-10",
+          "name": "Cykelpass intervall",
+          "type": "indoor_cycling",
+          "duration_fmt": "01:00:08",
+          "zone2_seconds": 1479,
+          "zone2_fmt": "0h 24m"
+        },
+        {
+          "date": "2025-09-03",
+          "name": "Stockholm - 3x7",
+          "type": "running",
+          "duration_fmt": "00:22:23",
+          "zone2_seconds": 111,
+          "zone2_fmt": "0h 01m"
+        },
+        {
+          "date": "2025-09-01",
+          "name": "Inomhuscykling",
+          "type": "indoor_cycling",
+          "duration_fmt": "00:48:02",
+          "zone2_seconds": 2344,
+          "zone2_fmt": "0h 39m"
+        },
+        {
+          "date": "2025-08-30",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:41:54",
+          "zone2_seconds": 181,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2025-08-26",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:40:18",
+          "zone2_seconds": 198,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2025-08-24",
+          "name": "Inomhuscykling",
+          "type": "indoor_cycling",
+          "duration_fmt": "00:45:02",
+          "zone2_seconds": 2469,
+          "zone2_fmt": "0h 41m"
+        },
+        {
+          "date": "2025-08-21",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:26:55",
+          "zone2_seconds": 363,
+          "zone2_fmt": "0h 06m"
+        },
+        {
+          "date": "2025-08-19",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:52:30",
+          "zone2_seconds": 794,
+          "zone2_fmt": "0h 13m"
+        },
+        {
+          "date": "2025-08-16",
+          "name": "Stockholm - 5k race",
+          "type": "running",
+          "duration_fmt": "00:38:46",
+          "zone2_seconds": 247,
+          "zone2_fmt": "0h 04m"
+        },
+        {
+          "date": "2025-08-13",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:26:44",
+          "zone2_seconds": 297,
+          "zone2_fmt": "0h 04m"
+        },
+        {
+          "date": "2025-08-12",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:53:54",
+          "zone2_seconds": 199,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2025-08-08",
+          "name": "Stockholm Cykling",
+          "type": "cycling",
+          "duration_fmt": "00:27:17",
+          "zone2_seconds": 0,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-08-08",
+          "name": "Stockholm Cykling",
+          "type": "cycling",
+          "duration_fmt": "00:20:30",
+          "zone2_seconds": 0,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-08-08",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:30:20",
+          "zone2_seconds": 87,
+          "zone2_fmt": "0h 01m"
+        },
+        {
+          "date": "2025-08-06",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:26:55",
+          "zone2_seconds": 1125,
+          "zone2_fmt": "0h 18m"
+        },
+        {
+          "date": "2025-08-04",
+          "name": "Inomhuscykling",
+          "type": "indoor_cycling",
+          "duration_fmt": "00:45:01",
+          "zone2_seconds": 2093,
+          "zone2_fmt": "0h 34m"
+        },
+        {
+          "date": "2025-08-03",
+          "name": "Gnesta - Fartintervaller",
+          "type": "running",
+          "duration_fmt": "00:39:03",
+          "zone2_seconds": 231,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2025-08-02",
+          "name": "Gnesta Cykling",
+          "type": "cycling",
+          "duration_fmt": "00:48:45",
+          "zone2_seconds": 1431,
+          "zone2_fmt": "0h 23m"
+        },
+        {
+          "date": "2025-07-31",
+          "name": "Gnesta - Cykel Z2",
+          "type": "cycling",
+          "duration_fmt": "00:49:38",
+          "zone2_seconds": 1729,
+          "zone2_fmt": "0h 28m"
+        },
+        {
+          "date": "2025-07-29",
+          "name": "Gnesta - L\u00f6ptur i m\u00e5ltempo",
+          "type": "running",
+          "duration_fmt": "00:35:51",
+          "zone2_seconds": 253,
+          "zone2_fmt": "0h 04m"
+        },
+        {
+          "date": "2025-07-27",
+          "name": "Gnesta L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:45:07",
+          "zone2_seconds": 2096,
+          "zone2_fmt": "0h 34m"
+        },
+        {
+          "date": "2025-07-26",
+          "name": "Gnesta - Progressionstur",
+          "type": "running",
+          "duration_fmt": "00:41:25",
+          "zone2_seconds": 190,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2025-07-24",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:45:00",
+          "zone2_seconds": 1741,
+          "zone2_fmt": "0h 29m"
+        },
+        {
+          "date": "2025-07-21",
+          "name": "Stockholm - Intervall\u00f6pning i m\u00e5lfart",
+          "type": "running",
+          "duration_fmt": "00:48:31",
+          "zone2_seconds": 562,
+          "zone2_fmt": "0h 09m"
+        },
+        {
+          "date": "2025-07-18",
+          "name": "Copenhagen - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:37:19",
+          "zone2_seconds": 1750,
+          "zone2_fmt": "0h 29m"
+        },
+        {
+          "date": "2025-07-16",
+          "name": "Lund - Tempopass",
+          "type": "running",
+          "duration_fmt": "00:57:58",
+          "zone2_seconds": 833,
+          "zone2_fmt": "0h 13m"
+        },
+        {
+          "date": "2025-07-15",
+          "name": "Lund - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "01:32:26",
+          "zone2_seconds": 3963,
+          "zone2_fmt": "1h 06m"
+        },
+        {
+          "date": "2025-07-12",
+          "name": "Lund - Progressionstur",
+          "type": "running",
+          "duration_fmt": "00:49:19",
+          "zone2_seconds": 33,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-07-11",
+          "name": "Lund - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:59:59",
+          "zone2_seconds": 2667,
+          "zone2_fmt": "0h 44m"
+        },
+        {
+          "date": "2025-07-09",
+          "name": "Borgholm - intervall i m\u00e5ltempo",
+          "type": "running",
+          "duration_fmt": "00:58:11",
+          "zone2_seconds": 1010,
+          "zone2_fmt": "0h 16m"
+        },
+        {
+          "date": "2025-07-06",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:47:02",
+          "zone2_seconds": 2286,
+          "zone2_fmt": "0h 38m"
+        },
+        {
+          "date": "2025-07-05",
+          "name": "Stockholm - Fartintervaller",
+          "type": "running",
+          "duration_fmt": "01:06:43",
+          "zone2_seconds": 1164,
+          "zone2_fmt": "0h 19m"
+        },
+        {
+          "date": "2025-06-30",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:47:03",
+          "zone2_seconds": 368,
+          "zone2_fmt": "0h 06m"
+        },
+        {
+          "date": "2025-06-28",
+          "name": "Solna L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:24:27",
+          "zone2_seconds": 10,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-06-25",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:57:55",
+          "zone2_seconds": 2292,
+          "zone2_fmt": "0h 38m"
+        },
+        {
+          "date": "2025-06-22",
+          "name": "Stockholm - Fartintervaller",
+          "type": "running",
+          "duration_fmt": "00:46:02",
+          "zone2_seconds": 1165,
+          "zone2_fmt": "0h 19m"
+        },
+        {
+          "date": "2025-06-19",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:49:59",
+          "zone2_seconds": 1476,
+          "zone2_fmt": "0h 24m"
+        },
+        {
+          "date": "2025-06-18",
+          "name": "Stockholm Cykling",
+          "type": "cycling",
+          "duration_fmt": "00:26:19",
+          "zone2_seconds": 188,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2025-06-16",
+          "name": "Stockholm - Intervall\u00f6pning i m\u00e5lfart",
+          "type": "running",
+          "duration_fmt": "01:01:08",
+          "zone2_seconds": 826,
+          "zone2_fmt": "0h 13m"
+        },
+        {
+          "date": "2025-06-15",
+          "name": "Stockholm - Stegringslopp, intervaller",
+          "type": "running",
+          "duration_fmt": "00:44:52",
+          "zone2_seconds": 1013,
+          "zone2_fmt": "0h 16m"
+        },
+        {
+          "date": "2025-06-12",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:48:17",
+          "zone2_seconds": 2193,
+          "zone2_fmt": "0h 36m"
+        },
+        {
+          "date": "2025-06-10",
+          "name": "Stockholm - Progressionstur",
+          "type": "running",
+          "duration_fmt": "00:50:00",
+          "zone2_seconds": 517,
+          "zone2_fmt": "0h 08m"
+        },
+        {
+          "date": "2025-06-08",
+          "name": "Stockholm - Intervall\u00f6pning i m\u00e5lfart",
+          "type": "running",
+          "duration_fmt": "00:56:44",
+          "zone2_seconds": 333,
+          "zone2_fmt": "0h 05m"
+        },
+        {
+          "date": "2025-06-05",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:45:49",
+          "zone2_seconds": 1258,
+          "zone2_fmt": "0h 20m"
+        },
+        {
+          "date": "2025-06-03",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:54:43",
+          "zone2_seconds": 103,
+          "zone2_fmt": "0h 01m"
+        },
+        {
+          "date": "2025-05-31",
+          "name": "Gnesta - Progressionstur",
+          "type": "running",
+          "duration_fmt": "00:51:57",
+          "zone2_seconds": 907,
+          "zone2_fmt": "0h 15m"
+        },
+        {
+          "date": "2025-05-29",
+          "name": "Gnesta - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:44:59",
+          "zone2_seconds": 452,
+          "zone2_fmt": "0h 07m"
+        },
+        {
+          "date": "2025-05-27",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:51:28",
+          "zone2_seconds": 861,
+          "zone2_fmt": "0h 14m"
+        },
+        {
+          "date": "2025-05-21",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:43:32",
+          "zone2_seconds": 108,
+          "zone2_fmt": "0h 01m"
+        },
+        {
+          "date": "2025-05-18",
+          "name": "Stockholm - Riktm\u00e4rkeslopp",
+          "type": "running",
+          "duration_fmt": "00:42:20",
+          "zone2_seconds": 54,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-05-15",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:35:48",
+          "zone2_seconds": 216,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2025-05-04",
+          "name": "Stockholm - Riktm\u00e4rkeslopp",
+          "type": "running",
+          "duration_fmt": "00:43:50",
+          "zone2_seconds": 110,
+          "zone2_fmt": "0h 01m"
+        },
+        {
+          "date": "2025-05-01",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:35:20",
+          "zone2_seconds": 280,
+          "zone2_fmt": "0h 04m"
+        },
+        {
+          "date": "2025-04-26",
+          "name": "Stockholm - Halvmaraton",
+          "type": "running",
+          "duration_fmt": "01:57:33",
+          "zone2_seconds": 58,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-04-24",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:41:13",
+          "zone2_seconds": 266,
+          "zone2_fmt": "0h 04m"
+        },
+        {
+          "date": "2025-04-22",
+          "name": "Stockholm - Tempopass",
+          "type": "running",
+          "duration_fmt": "00:32:25",
+          "zone2_seconds": 102,
+          "zone2_fmt": "0h 01m"
+        },
+        {
+          "date": "2025-04-19",
+          "name": "Gnesta - L\u00f6ptur i m\u00e5ltempo",
+          "type": "running",
+          "duration_fmt": "00:59:07",
+          "zone2_seconds": 234,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2025-04-17",
+          "name": "Gnesta - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:45:00",
+          "zone2_seconds": 141,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2025-04-13",
+          "name": "Stockholm - Tempopass",
+          "type": "running",
+          "duration_fmt": "00:46:52",
+          "zone2_seconds": 287,
+          "zone2_fmt": "0h 04m"
+        },
+        {
+          "date": "2025-04-10",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:40:31",
+          "zone2_seconds": 48,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-04-08",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "02:00:00",
+          "zone2_seconds": 185,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2025-04-05",
+          "name": "Liding\u00f6 - L\u00f6ptur i m\u00e5ltempo",
+          "type": "running",
+          "duration_fmt": "01:14:59",
+          "zone2_seconds": 542,
+          "zone2_fmt": "0h 09m"
+        },
+        {
+          "date": "2025-04-03",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "01:01:02",
+          "zone2_seconds": 130,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2025-04-01",
+          "name": "Stockholm - Progressionstur",
+          "type": "running",
+          "duration_fmt": "01:05:24",
+          "zone2_seconds": 136,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2025-03-30",
+          "name": "Stockholm - Fartintervaller",
+          "type": "running",
+          "duration_fmt": "00:53:14",
+          "zone2_seconds": 240,
+          "zone2_fmt": "0h 04m"
+        },
+        {
+          "date": "2025-03-29",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:45:00",
+          "zone2_seconds": 236,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2025-03-26",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:40:36",
+          "zone2_seconds": 179,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2025-03-23",
+          "name": "Stockholm - Fartintervaller",
+          "type": "running",
+          "duration_fmt": "00:44:41",
+          "zone2_seconds": 369,
+          "zone2_fmt": "0h 06m"
+        },
+        {
+          "date": "2025-03-20",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:41:37",
+          "zone2_seconds": 734,
+          "zone2_fmt": "0h 12m"
+        },
+        {
+          "date": "2025-03-17",
+          "name": "Stockholm - Progressionstur",
+          "type": "running",
+          "duration_fmt": "01:20:08",
+          "zone2_seconds": 135,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2025-03-15",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:49:13",
+          "zone2_seconds": 41,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-03-13",
+          "name": "Stockholm - L\u00f6ptur i m\u00e5ltempo",
+          "type": "running",
+          "duration_fmt": "00:49:09",
+          "zone2_seconds": 116,
+          "zone2_fmt": "0h 01m"
+        },
+        {
+          "date": "2025-03-11",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "01:29:10",
+          "zone2_seconds": 565,
+          "zone2_fmt": "0h 09m"
+        },
+        {
+          "date": "2025-03-09",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:40:03",
+          "zone2_seconds": 113,
+          "zone2_fmt": "0h 01m"
+        },
+        {
+          "date": "2025-03-08",
+          "name": "Stockholm - Fartintervaller",
+          "type": "running",
+          "duration_fmt": "00:50:16",
+          "zone2_seconds": 391,
+          "zone2_fmt": "0h 06m"
+        },
+        {
+          "date": "2025-03-06",
+          "name": "Stockholm - Progressionstur",
+          "type": "running",
+          "duration_fmt": "00:40:00",
+          "zone2_seconds": 58,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-03-04",
+          "name": "Stockholm - Progressionstur",
+          "type": "running",
+          "duration_fmt": "00:40:00",
+          "zone2_seconds": 484,
+          "zone2_fmt": "0h 08m"
+        },
+        {
+          "date": "2025-03-02",
+          "name": "Stockholm - L\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:52:43",
+          "zone2_seconds": 361,
+          "zone2_fmt": "0h 06m"
+        },
+        {
+          "date": "2025-02-27",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:37:19",
+          "zone2_seconds": 121,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2025-02-25",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:51:58",
+          "zone2_seconds": 440,
+          "zone2_fmt": "0h 07m"
+        },
+        {
+          "date": "2025-02-22",
+          "name": "Stockholm - L\u00f6ptur i m\u00e5ltempo",
+          "type": "running",
+          "duration_fmt": "00:49:44",
+          "zone2_seconds": 225,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2025-02-20",
+          "name": "L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:55:33",
+          "zone2_seconds": 0,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-02-18",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "01:18:41",
+          "zone2_seconds": 661,
+          "zone2_fmt": "0h 11m"
+        },
+        {
+          "date": "2025-02-15",
+          "name": "Stockholm - Progressionstur",
+          "type": "running",
+          "duration_fmt": "00:35:39",
+          "zone2_seconds": 357,
+          "zone2_fmt": "0h 05m"
+        },
+        {
+          "date": "2025-02-13",
+          "name": "Stockholm - Fartintervaller",
+          "type": "running",
+          "duration_fmt": "00:38:49",
+          "zone2_seconds": 282,
+          "zone2_fmt": "0h 04m"
+        },
+        {
+          "date": "2025-02-11",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "01:20:11",
+          "zone2_seconds": 373,
+          "zone2_fmt": "0h 06m"
+        },
+        {
+          "date": "2025-02-08",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:35:29",
+          "zone2_seconds": 248,
+          "zone2_fmt": "0h 04m"
+        },
+        {
+          "date": "2025-02-06",
+          "name": "Stockholm - Stegringslopp, intervaller",
+          "type": "running",
+          "duration_fmt": "00:27:31",
+          "zone2_seconds": 362,
+          "zone2_fmt": "0h 06m"
+        },
+        {
+          "date": "2025-02-04",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:48:26",
+          "zone2_seconds": 36,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-02-02",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:22:53",
+          "zone2_seconds": 257,
+          "zone2_fmt": "0h 04m"
+        },
+        {
+          "date": "2025-02-01",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:30:00",
+          "zone2_seconds": 300,
+          "zone2_fmt": "0h 05m"
+        },
+        {
+          "date": "2025-01-30",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:29:04",
+          "zone2_seconds": 366,
+          "zone2_fmt": "0h 06m"
+        },
+        {
+          "date": "2025-01-28",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:33:31",
+          "zone2_seconds": 382,
+          "zone2_fmt": "0h 06m"
+        },
+        {
+          "date": "2025-01-25",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:29:20",
+          "zone2_seconds": 352,
+          "zone2_fmt": "0h 05m"
+        },
+        {
+          "date": "2025-01-21",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "01:03:53",
+          "zone2_seconds": 459,
+          "zone2_fmt": "0h 07m"
+        },
+        {
+          "date": "2025-01-16",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:28:36",
+          "zone2_seconds": 383,
+          "zone2_fmt": "0h 06m"
+        },
+        {
+          "date": "2025-01-15",
+          "name": "Stockholm - zonvariation",
+          "type": "running",
+          "duration_fmt": "00:28:11",
+          "zone2_seconds": 95,
+          "zone2_fmt": "0h 01m"
+        },
+        {
+          "date": "2025-01-11",
+          "name": "Adeje L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:54:14",
+          "zone2_seconds": 316,
+          "zone2_fmt": "0h 05m"
+        }
+      ],
+      "by_activity_ytd": [
+        {
+          "date": "2025-02-27",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:37:19",
+          "zone2_seconds": 121,
+          "zone2_fmt": "0h 02m"
+        },
+        {
+          "date": "2025-02-25",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:51:58",
+          "zone2_seconds": 440,
+          "zone2_fmt": "0h 07m"
+        },
+        {
+          "date": "2025-02-22",
+          "name": "Stockholm - L\u00f6ptur i m\u00e5ltempo",
+          "type": "running",
+          "duration_fmt": "00:49:44",
+          "zone2_seconds": 225,
+          "zone2_fmt": "0h 03m"
+        },
+        {
+          "date": "2025-02-20",
+          "name": "L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:55:33",
+          "zone2_seconds": 0,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-02-18",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "01:18:41",
+          "zone2_seconds": 661,
+          "zone2_fmt": "0h 11m"
+        },
+        {
+          "date": "2025-02-15",
+          "name": "Stockholm - Progressionstur",
+          "type": "running",
+          "duration_fmt": "00:35:39",
+          "zone2_seconds": 357,
+          "zone2_fmt": "0h 05m"
+        },
+        {
+          "date": "2025-02-13",
+          "name": "Stockholm - Fartintervaller",
+          "type": "running",
+          "duration_fmt": "00:38:49",
+          "zone2_seconds": 282,
+          "zone2_fmt": "0h 04m"
+        },
+        {
+          "date": "2025-02-11",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "01:20:11",
+          "zone2_seconds": 373,
+          "zone2_fmt": "0h 06m"
+        },
+        {
+          "date": "2025-02-08",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:35:29",
+          "zone2_seconds": 248,
+          "zone2_fmt": "0h 04m"
+        },
+        {
+          "date": "2025-02-06",
+          "name": "Stockholm - Stegringslopp, intervaller",
+          "type": "running",
+          "duration_fmt": "00:27:31",
+          "zone2_seconds": 362,
+          "zone2_fmt": "0h 06m"
+        },
+        {
+          "date": "2025-02-04",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:48:26",
+          "zone2_seconds": 36,
+          "zone2_fmt": "0h 00m"
+        },
+        {
+          "date": "2025-02-02",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:22:53",
+          "zone2_seconds": 257,
+          "zone2_fmt": "0h 04m"
+        },
+        {
+          "date": "2025-02-01",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:30:00",
+          "zone2_seconds": 300,
+          "zone2_fmt": "0h 05m"
+        },
+        {
+          "date": "2025-01-30",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:29:04",
+          "zone2_seconds": 366,
+          "zone2_fmt": "0h 06m"
+        },
+        {
+          "date": "2025-01-28",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:33:31",
+          "zone2_seconds": 382,
+          "zone2_fmt": "0h 06m"
+        },
+        {
+          "date": "2025-01-25",
+          "name": "Stockholm - L\u00e4tt l\u00f6ppass",
+          "type": "running",
+          "duration_fmt": "00:29:20",
+          "zone2_seconds": 352,
+          "zone2_fmt": "0h 05m"
+        },
+        {
+          "date": "2025-01-21",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "01:03:53",
+          "zone2_seconds": 459,
+          "zone2_fmt": "0h 07m"
+        },
+        {
+          "date": "2025-01-16",
+          "name": "Stockholm L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:28:36",
+          "zone2_seconds": 383,
+          "zone2_fmt": "0h 06m"
+        },
+        {
+          "date": "2025-01-15",
+          "name": "Stockholm - zonvariation",
+          "type": "running",
+          "duration_fmt": "00:28:11",
+          "zone2_seconds": 95,
+          "zone2_fmt": "0h 01m"
+        },
+        {
+          "date": "2025-01-11",
+          "name": "Adeje L\u00f6pning",
+          "type": "running",
+          "duration_fmt": "00:54:14",
+          "zone2_seconds": 316,
+          "zone2_fmt": "0h 05m"
+        }
+      ]
+    }
+  }
+}
