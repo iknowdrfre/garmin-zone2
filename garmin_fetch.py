@@ -4,7 +4,7 @@ Garmin Zone 2 Fetcher — runs via GitHub Actions.
 Writes data.json to be served by GitHub Pages.
 
 Requirements: pip install garminconnect
-Env vars:     GARMIN_EMAIL, GARMIN_PASSWORD
+Env vars:     GARMIN_TOKEN  (see README for how to generate)
 """
 
 import os
@@ -29,14 +29,14 @@ OUTPUT_FILE    = "data.json"
 # ── Auth ──────────────────────────────────────────────────────────────────────
 
 def login() -> Garmin:
-    email    = os.environ.get("GARMIN_EMAIL")
-    password = os.environ.get("GARMIN_PASSWORD")
-    if not email or not password:
-        print("Error: GARMIN_EMAIL and GARMIN_PASSWORD must be set.")
+    token = os.environ.get("GARMIN_TOKEN")
+    if not token:
+        print("Error: GARMIN_TOKEN must be set. See README for instructions.")
         sys.exit(1)
-    print("Logging in to Garmin Connect...")
-    client = Garmin(email, password)
-    client.login()
+    print("Logging in via cached session token...")
+    client = Garmin()
+    client.garth.loads(token)
+    client.display_name = client.garth.profile.get("displayName", "")
     print("Login successful.")
     return client
 
