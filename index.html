@@ -1,275 +1,10 @@
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zon 2</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --bg:        #0d0f0e;
-      --surface:   #151815;
-      --border:    #1f231f;
-      --green:     #b8f5a0;
-      --green-dim: #4a7a3a;
-      --muted:     #4a524a;
-      --text:      #d8e8d0;
-      --text-dim:  #6a7a68;
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'DM Mono', monospace;
-      min-height: 100dvh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0 0 4rem;
-      overflow-x: hidden;
-    }
-
-    /* ── Header ── */
-    header {
-      width: 100%;
-      padding: 2.5rem 1.5rem 1.5rem;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-    }
-    .label {
-      font-size: 0.65rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--text-dim);
-    }
-    h1 {
-      font-family: 'Fraunces', serif;
-      font-weight: 300;
-      font-size: 2rem;
-      color: var(--green);
-      line-height: 1.1;
-    }
-    .updated {
-      font-size: 0.65rem;
-      color: var(--muted);
-      margin-top: 0.5rem;
-    }
-
-    /* ── Main card ── */
-    .main-card {
-      width: calc(100% - 3rem);
-      max-width: 480px;
-      margin: 2rem auto 0;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 2px;
-      padding: 2rem 1.5rem;
-    }
-
-    .year-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      margin-bottom: 0.75rem;
-    }
-    .year-tag {
-      font-size: 0.65rem;
-      letter-spacing: 0.12em;
-      color: var(--text-dim);
-      text-transform: uppercase;
-    }
-    .delta {
-      font-size: 0.7rem;
-      color: var(--green-dim);
-    }
-    .delta.ahead { color: var(--green); }
-
-    .big-time {
-      font-family: 'Fraunces', serif;
-      font-weight: 300;
-      font-size: 3.5rem;
-      color: var(--green);
-      letter-spacing: -0.02em;
-      line-height: 1;
-      margin-bottom: 0.25rem;
-    }
-    .big-time.last {
-      font-size: 2rem;
-      color: var(--muted);
-      margin-top: 1.75rem;
-    }
-
-    /* ── Progress bar ── */
-    .bar-wrap {
-      margin: 1.5rem 0 0.5rem;
-      height: 3px;
-      background: var(--border);
-      border-radius: 2px;
-      overflow: hidden;
-    }
-    .bar-fill {
-      height: 100%;
-      background: var(--green);
-      border-radius: 2px;
-      transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
-      width: 0%;
-    }
-    .bar-label {
-      font-size: 0.65rem;
-      color: var(--text-dim);
-    }
-
-    /* ── Weekly breakdown ── */
-    .section-title {
-      font-size: 0.65rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--text-dim);
-      margin: 2.5rem 1.5rem 0.75rem;
-      width: calc(100% - 3rem);
-      max-width: 480px;
-    }
-
-    .week-grid {
-      width: calc(100% - 3rem);
-      max-width: 480px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(2.5rem, 1fr));
-      gap: 3px;
-    }
-
-    .week-cell {
-      aspect-ratio: 1;
-      border-radius: 2px;
-      background: var(--border);
-      position: relative;
-      cursor: default;
-      transition: opacity 0.15s;
-    }
-    .week-cell:hover { opacity: 0.8; }
-    .week-cell .fill {
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      background: var(--green);
-      border-radius: 2px;
-      transition: height 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .week-cell .wlabel {
-      position: absolute;
-      top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 0.5rem;
-      color: var(--bg);
-      z-index: 1;
-      opacity: 0;
-      transition: opacity 0.15s;
-      white-space: nowrap;
-    }
-    .week-cell:hover .wlabel { opacity: 1; }
-
-    /* ── Recent activities ── */
-    .activity-list {
-      width: calc(100% - 3rem);
-      max-width: 480px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 1px;
-    }
-    .activity-row {
-      display: grid;
-      grid-template-columns: 5.5rem 1fr auto;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 0.6rem 0;
-      border-bottom: 1px solid var(--border);
-    }
-    .activity-row:last-child { border-bottom: none; }
-    .act-date { font-size: 0.65rem; color: var(--text-dim); }
-    .act-name {
-      font-size: 0.7rem;
-      color: var(--text);
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-    .act-z2 {
-      font-size: 0.7rem;
-      color: var(--green);
-      white-space: nowrap;
-    }
-    .act-z2.zero { color: var(--muted); }
-
-    /* ── Refresh button ── */
-    .refresh-wrap {
-      width: calc(100% - 3rem);
-      max-width: 480px;
-      margin: 2.5rem auto 0;
-    }
-    button {
-      width: 100%;
-      padding: 0.9rem;
-      background: transparent;
-      border: 1px solid var(--green-dim);
-      color: var(--green);
-      font-family: 'DM Mono', monospace;
-      font-size: 0.7rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      cursor: pointer;
-      border-radius: 2px;
-      transition: background 0.2s, border-color 0.2s;
-    }
-    button:hover { background: rgba(184,245,160,0.06); border-color: var(--green); }
-    button:disabled { opacity: 0.35; cursor: not-allowed; }
-    .refresh-note {
-      font-size: 0.6rem;
-      color: var(--muted);
-      text-align: center;
-      margin-top: 0.6rem;
-    }
-
-    /* ── Loading / error ── */
-    .state-msg {
-      margin-top: 4rem;
-      font-size: 0.7rem;
-      color: var(--text-dim);
-      text-align: center;
-    }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(12px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    .animate { animation: fadeUp 0.6s ease both; }
-    .delay-1 { animation-delay: 0.1s; }
-    .delay-2 { animation-delay: 0.2s; }
-    .delay-3 { animation-delay: 0.3s; }
-    .delay-4 { animation-delay: 0.4s; }
-  </style>
-</head>
-<body>
-
-<header>
-  <span class="label">Fredrik / Träning</span>
-  <h1>Zon 2</h1>
-  <span class="updated" id="updated">Laddar…</span>
-</header>
-
-<div id="app"><p class="state-msg">Hämtar data…</p></div>
-
 <script>
 // ── Config ────────────────────────────────────────────────────────────────────
 const GITHUB_USER  = "iknowdrfre";
-const GITHUB_REPO  = "garmin-zone2";          // change if you name your repo differently
-const GITHUB_TOKEN = "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";                       // paste your PAT here to enable refresh button
+const GITHUB_REPO  = "garmin-zone2";
+const GITHUB_TOKEN = "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";
 const WORKFLOW_ID  = "fetch.yml";
+const FILTER_STORAGE_KEY = "minActivityMinutes";
 
 // ── Fetch data.json ───────────────────────────────────────────────────────────
 async function loadData() {
@@ -319,10 +54,55 @@ function fmtHM(secs) {
   return `${h}h ${String(m).padStart(2,"0")}m`;
 }
 
-function currentDayOfYear() {
-  const now = new Date();
-  const start = new Date(now.getFullYear(), 0, 0);
-  return Math.floor((now - start) / 86_400_000);
+function parseDurationToSeconds(duration) {
+  if (!duration) return 0;
+  const parts = duration.split(":").map(Number);
+  if (parts.length !== 3 || parts.some(Number.isNaN)) return 0;
+  const [hh, mm, ss] = parts;
+  return hh * 3600 + mm * 60 + ss;
+}
+
+function getMinMinutes(data) {
+  const saved = localStorage.getItem(FILTER_STORAGE_KEY);
+  if (saved !== null && saved !== "" && !Number.isNaN(Number(saved))) {
+    return Number(saved);
+  }
+  return Number(data.min_activity_minutes || 10);
+}
+
+function setMinMinutes(value) {
+  localStorage.setItem(FILTER_STORAGE_KEY, String(value));
+}
+
+function getISOWeek(dateStr) {
+  const date = new Date(`${dateStr}T12:00:00`);
+  const target = new Date(date.valueOf());
+  const dayNr = (date.getDay() + 6) % 7;
+  target.setDate(target.getDate() - dayNr + 3);
+  const firstThursday = new Date(target.getFullYear(), 0, 4);
+  const firstDayNr = (firstThursday.getDay() + 6) % 7;
+  firstThursday.setDate(firstThursday.getDate() - firstDayNr + 3);
+  return 1 + Math.round((target - firstThursday) / 604800000);
+}
+
+function filterActivitiesByMinutes(activities, minMinutes) {
+  const minSeconds = minMinutes * 60;
+  return activities.filter(a => parseDurationToSeconds(a.duration_fmt) > minSeconds);
+}
+
+function sumZone2Seconds(activities) {
+  return activities.reduce((sum, a) => sum + (a.zone2_seconds || 0), 0);
+}
+
+function buildWeekMap(activities, maxWeek = 53) {
+  const byWeek = {};
+  for (const a of activities) {
+    if (!a.date) continue;
+    const week = getISOWeek(a.date);
+    if (week < 1 || week > maxWeek) continue;
+    byWeek[String(week)] = (byWeek[String(week)] || 0) + (a.zone2_seconds || 0);
+  }
+  return byWeek;
 }
 
 // ── Render ────────────────────────────────────────────────────────────────────
@@ -335,34 +115,40 @@ async function render() {
     return;
   }
 
-  const thisY  = String(data.this_year);
-  const lastY  = String(data.last_year);
-  const thisD  = data.years[thisY];
-  const lastD  = data.years[lastY];
+  const thisY = String(data.this_year);
+  const lastY = String(data.last_year);
 
-  document.getElementById("updated").textContent =
-    `Uppdaterad ${data.updated_at}`;
+  const minMinutes = getMinMinutes(data);
 
-  // How far through the year are we? Use to compare last year fairly
-  const dayFrac  = currentDayOfYear() / 365;
-  const lastPace = Math.round(lastD.total_seconds * dayFrac); // last year at same point
-  const delta    = thisD.total_seconds - lastPace;
+  const thisActivities = filterActivitiesByMinutes(data.years[thisY].by_activity || [], minMinutes);
+  const lastActivities = filterActivitiesByMinutes(data.years[lastY].by_activity || [], minMinutes);
+  const lastYtdActivities = filterActivitiesByMinutes(data.years[lastY].by_activity_ytd || [], minMinutes);
+
+  const thisTotalSeconds = sumZone2Seconds(thisActivities);
+  const lastTotalSeconds = sumZone2Seconds(lastActivities);
+  const lastYtdSeconds = sumZone2Seconds(lastYtdActivities);
+
+  const thisByWeek = buildWeekMap(thisActivities, data.current_week || 53);
+
+  document.getElementById("updated").textContent = `Uppdaterad ${data.updated_at}`;
+
+  const delta = thisTotalSeconds - lastYtdSeconds;
   const aheadBehind = delta >= 0
     ? `+${fmtHM(Math.abs(delta))} före fjolåret`
     : `${fmtHM(Math.abs(delta))} efter fjolåret`;
-  const isAhead  = delta >= 0;
-  const barPct   = lastD.total_seconds > 0
-    ? Math.min(100, Math.round((thisD.total_seconds / lastD.total_seconds) * 100))
+  const isAhead = delta >= 0;
+
+  const barPct = lastTotalSeconds > 0
+    ? Math.min(100, Math.round((thisTotalSeconds / lastTotalSeconds) * 100))
     : 0;
 
-  // Weekly cells — this year only, up to current week
-  const maxWeek  = data.current_week;
-  const weekSecs = thisD.by_week;
-  const maxSecs  = Math.max(...Object.values(weekSecs).map(Number), 1);
-  let weekCells  = "";
+  const maxWeek = data.current_week;
+  const maxSecs = Math.max(...Object.values(thisByWeek).map(Number), 1);
+
+  let weekCells = "";
   for (let w = 1; w <= maxWeek; w++) {
-    const s    = weekSecs[String(w)] || 0;
-    const pct  = Math.round((s / maxSecs) * 100);
+    const s = thisByWeek[String(w)] || 0;
+    const pct = Math.round((s / maxSecs) * 100);
     weekCells += `
       <div class="week-cell">
         <div class="fill" style="height:0%" data-pct="${pct}"></div>
@@ -370,14 +156,15 @@ async function render() {
       </div>`;
   }
 
-  // Recent activities (last 10 with any zone 2)
-  const recent = thisD.by_activity.slice(0, 15);
-  const actRows = recent.map(a => `
-    <div class="activity-row">
-      <span class="act-date">${a.date}</span>
-      <span class="act-name">${a.name}</span>
-      <span class="act-z2 ${a.zone2_seconds === 0 ? 'zero' : ''}">${a.zone2_fmt}</span>
-    </div>`).join("");
+  const recent = thisActivities.slice(0, 15);
+  const actRows = recent.length
+    ? recent.map(a => `
+      <div class="activity-row">
+        <span class="act-date">${a.date}</span>
+        <span class="act-name">${a.name}</span>
+        <span class="act-z2 ${a.zone2_seconds === 0 ? 'zero' : ''}">${a.zone2_fmt}</span>
+      </div>`).join("")
+    : `<p class="state-msg" style="margin-top:1rem;">Inga aktiviteter matchar filtret.</p>`;
 
   app.innerHTML = `
     <div class="main-card animate">
@@ -385,7 +172,7 @@ async function render() {
         <span class="year-tag">${data.this_year}</span>
         <span class="delta ${isAhead ? 'ahead' : ''}">${aheadBehind}</span>
       </div>
-      <div class="big-time">${thisD.total_fmt}</div>
+      <div class="big-time">${fmtHM(thisTotalSeconds)}</div>
 
       <div class="bar-wrap">
         <div class="bar-fill" id="bar" data-pct="${barPct}"></div>
@@ -395,7 +182,7 @@ async function render() {
       <div class="year-row" style="margin-top:0">
         <span class="year-tag">${data.last_year} (totalt)</span>
       </div>
-      <div class="big-time last">${lastD.total_fmt}</div>
+      <div class="big-time last">${fmtHM(lastTotalSeconds)}</div>
     </div>
 
     <p class="section-title animate delay-1">Zon 2 per vecka — ${data.this_year}</p>
@@ -408,9 +195,39 @@ async function render() {
       <button id="refreshBtn" onclick="triggerRefresh(this)">↻ Uppdatera nu</button>
       <p class="refresh-note">Hämtar ny data från Garmin — tar ~1 minut</p>
     </div>
+
+    <div class="refresh-wrap animate delay-4" style="margin-top:1rem;">
+      <label for="minMinutesInput" class="label" style="display:block; margin-bottom:0.6rem;">
+        Min aktivitetstid (minuter)
+      </label>
+      <input
+        id="minMinutesInput"
+        type="number"
+        min="0"
+        step="1"
+        value="${minMinutes}"
+        style="
+          width:100%;
+          padding:0.9rem;
+          background:transparent;
+          border:1px solid var(--green-dim);
+          color:var(--green);
+          font-family:'DM Mono', monospace;
+          font-size:0.9rem;
+          border-radius:2px;
+        "
+      />
+      <p class="refresh-note">Visar bara aktiviteter längre än detta värde.</p>
+    </div>
   `;
 
-  // Animate bars after paint
+  const input = document.getElementById("minMinutesInput");
+  input.addEventListener("change", () => {
+    const value = Math.max(0, Number(input.value) || 0);
+    setMinMinutes(value);
+    render();
+  });
+
   requestAnimationFrame(() => {
     setTimeout(() => {
       document.getElementById("bar").style.width = barPct + "%";
@@ -423,5 +240,3 @@ async function render() {
 
 render();
 </script>
-</body>
-</html>
