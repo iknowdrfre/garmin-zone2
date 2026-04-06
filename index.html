@@ -1,19 +1,292 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zon 2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0d0f0e;
+      --surface:   #151815;
+      --border:    #1f231f;
+      --green:     #b8f5a0;
+      --green-dim: #4a7a3a;
+      --muted:     #4a524a;
+      --text:      #d8e8d0;
+      --text-dim:  #6a7a68;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Mono', monospace;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 0 4rem;
+      overflow-x: hidden;
+    }
+
+    header {
+      width: 100%;
+      padding: 2.5rem 1.5rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    .label {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 300;
+      font-size: 2rem;
+      color: var(--green);
+      line-height: 1.1;
+    }
+    .updated {
+      font-size: 0.65rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+    }
+
+    .main-card {
+      width: calc(100% - 3rem);
+      max-width: 480px;
+      margin: 2rem auto 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: 2rem 1.5rem;
+    }
+
+    .year-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 0.75rem;
+      gap: 1rem;
+    }
+    .year-tag {
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      color: var(--text-dim);
+      text-transform: uppercase;
+    }
+    .delta {
+      font-size: 0.7rem;
+      color: var(--green-dim);
+      text-align: right;
+    }
+    .delta.ahead { color: var(--green); }
+
+    .big-time {
+      font-family: 'Fraunces', serif;
+      font-weight: 300;
+      font-size: 3.5rem;
+      color: var(--green);
+      letter-spacing: -0.02em;
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+    .big-time.last {
+      font-size: 2rem;
+      color: var(--muted);
+      margin-top: 1.75rem;
+    }
+
+    .bar-wrap {
+      margin: 1.5rem 0 0.5rem;
+      height: 3px;
+      background: var(--border);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      background: var(--green);
+      border-radius: 2px;
+      transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+      width: 0%;
+    }
+    .bar-label {
+      font-size: 0.65rem;
+      color: var(--text-dim);
+    }
+
+    .section-title {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin: 2.5rem 1.5rem 0.75rem;
+      width: calc(100% - 3rem);
+      max-width: 480px;
+    }
+
+    .week-grid {
+      width: calc(100% - 3rem);
+      max-width: 480px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(2.5rem, 1fr));
+      gap: 3px;
+    }
+
+    .week-cell {
+      aspect-ratio: 1;
+      border-radius: 2px;
+      background: var(--border);
+      position: relative;
+      cursor: default;
+      transition: opacity 0.15s;
+    }
+    .week-cell:hover { opacity: 0.8; }
+    .week-cell .fill {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: var(--green);
+      border-radius: 2px;
+      transition: height 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .week-cell .wlabel {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 0.5rem;
+      color: var(--bg);
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.15s;
+      white-space: nowrap;
+    }
+    .week-cell:hover .wlabel { opacity: 1; }
+
+    .activity-list {
+      width: calc(100% - 3rem);
+      max-width: 480px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+    .activity-row {
+      display: grid;
+      grid-template-columns: 5.5rem 1fr auto;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .activity-row:last-child { border-bottom: none; }
+    .act-date { font-size: 0.65rem; color: var(--text-dim); }
+    .act-name {
+      font-size: 0.7rem;
+      color: var(--text);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .act-z2 {
+      font-size: 0.7rem;
+      color: var(--green);
+      white-space: nowrap;
+    }
+    .act-z2.zero { color: var(--muted); }
+
+    .refresh-wrap {
+      width: calc(100% - 3rem);
+      max-width: 480px;
+      margin: 2.5rem auto 0;
+    }
+    button {
+      width: 100%;
+      padding: 0.9rem;
+      background: transparent;
+      border: 1px solid var(--green-dim);
+      color: var(--green);
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    button:hover { background: rgba(184,245,160,0.06); border-color: var(--green); }
+    button:disabled { opacity: 0.35; cursor: not-allowed; }
+    .refresh-note {
+      font-size: 0.6rem;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 0.6rem;
+    }
+
+    .filter-input {
+      width: 100%;
+      padding: 0.9rem;
+      background: transparent;
+      border: 1px solid var(--green-dim);
+      color: var(--green);
+      font-family: 'DM Mono', monospace;
+      font-size: 0.9rem;
+      border-radius: 2px;
+      outline: none;
+    }
+    .filter-input:focus {
+      border-color: var(--green);
+    }
+
+    .state-msg {
+      margin-top: 4rem;
+      font-size: 0.7rem;
+      color: var(--text-dim);
+      text-align: center;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .animate { animation: fadeUp 0.6s ease both; }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+    .delay-4 { animation-delay: 0.4s; }
+  </style>
+</head>
+<body>
+
+<header>
+  <span class="label">Fredrik / Träning</span>
+  <h1>Zon 2</h1>
+  <span class="updated" id="updated">Laddar…</span>
+</header>
+
+<div id="app"><p class="state-msg">Hämtar data…</p></div>
+
 <script>
-// ── Config ────────────────────────────────────────────────────────────────────
 const GITHUB_USER  = "iknowdrfre";
 const GITHUB_REPO  = "garmin-zone2";
 const GITHUB_TOKEN = "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";
 const WORKFLOW_ID  = "fetch.yml";
 const FILTER_STORAGE_KEY = "minActivityMinutes";
 
-// ── Fetch data.json ───────────────────────────────────────────────────────────
 async function loadData() {
   const res = await fetch(`data.json?_=${Date.now()}`);
   if (!res.ok) throw new Error("Kunde inte ladda data.json");
   return res.json();
 }
 
-// ── Trigger GitHub Action ─────────────────────────────────────────────────────
 async function triggerRefresh(btn) {
   if (!GITHUB_TOKEN) {
     alert("Lägg till din GitHub PAT i index.html för att aktivera manuell uppdatering.");
@@ -36,7 +309,10 @@ async function triggerRefresh(btn) {
     );
     if (res.status === 204) {
       btn.textContent = "Uppdatering startad — klart om ~1 min";
-      setTimeout(() => { btn.disabled = false; btn.textContent = "Uppdatera nu"; }, 90_000);
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.textContent = "↻ Uppdatera nu";
+      }, 90_000);
     } else {
       btn.textContent = "Något gick fel — försök igen";
       btn.disabled = false;
@@ -47,7 +323,6 @@ async function triggerRefresh(btn) {
   }
 }
 
-// ── Helpers ───────────────────────────────────────────────────────────────────
 function fmtHM(secs) {
   const h = Math.floor(secs / 3600);
   const m = Math.floor((secs % 3600) / 60);
@@ -105,19 +380,18 @@ function buildWeekMap(activities, maxWeek = 53) {
   return byWeek;
 }
 
-// ── Render ────────────────────────────────────────────────────────────────────
 async function render() {
   const app = document.getElementById("app");
   let data;
-  try { data = await loadData(); }
-  catch (e) {
+  try {
+    data = await loadData();
+  } catch (e) {
     app.innerHTML = `<p class="state-msg">Fel: ${e.message}</p>`;
     return;
   }
 
   const thisY = String(data.this_year);
   const lastY = String(data.last_year);
-
   const minMinutes = getMinMinutes(data);
 
   const thisActivities = filterActivitiesByMinutes(data.years[thisY].by_activity || [], minMinutes);
@@ -202,20 +476,11 @@ async function render() {
       </label>
       <input
         id="minMinutesInput"
+        class="filter-input"
         type="number"
         min="0"
         step="1"
         value="${minMinutes}"
-        style="
-          width:100%;
-          padding:0.9rem;
-          background:transparent;
-          border:1px solid var(--green-dim);
-          color:var(--green);
-          font-family:'DM Mono', monospace;
-          font-size:0.9rem;
-          border-radius:2px;
-        "
       />
       <p class="refresh-note">Visar bara aktiviteter längre än detta värde.</p>
     </div>
@@ -224,13 +489,15 @@ async function render() {
   const input = document.getElementById("minMinutesInput");
   input.addEventListener("change", () => {
     const value = Math.max(0, Number(input.value) || 0);
+    input.value = value;
     setMinMinutes(value);
     render();
   });
 
   requestAnimationFrame(() => {
     setTimeout(() => {
-      document.getElementById("bar").style.width = barPct + "%";
+      const bar = document.getElementById("bar");
+      if (bar) bar.style.width = barPct + "%";
       document.querySelectorAll(".week-cell .fill").forEach(el => {
         el.style.height = el.dataset.pct + "%";
       });
@@ -240,3 +507,5 @@ async function render() {
 
 render();
 </script>
+</body>
+</html>
